@@ -28,10 +28,6 @@ class Solution {
     }
 
     static void Main(String[] args) {
-        string[] tokens_n1 = Console.ReadLine().Split(' ');
-        int n1 = Convert.ToInt32(tokens_n1[0]);
-        int n2 = Convert.ToInt32(tokens_n1[1]);
-        int n3 = Convert.ToInt32(tokens_n1[2]);
         string[] h1_temp = Console.ReadLine().Split(' ');
         Stack h1 = new Stack(Array.ConvertAll(h1_temp,Int32.Parse));
         string[] h2_temp = Console.ReadLine().Split(' ');
@@ -47,7 +43,8 @@ class Solution {
         int[] heights3 = getHeights(h3);
         int result = -1;
         for(int i = heights1.Length-1; i > -1; i--) {
-            if (heights2.Contains(heights1[i]) && heights3.Contains(heights1[i])) {
+            if (!(Array.BinarySearch(heights2, heights1[i]) < 0) && 
+                !(Array.BinarySearch(heights3, heights1[i]) < 0)) {
                 result = heights1[i];
                 break;
             }
