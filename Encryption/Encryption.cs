@@ -18,7 +18,7 @@ class Solution {
     *aohghn sseoau */
 
     static void Main(String[] args) {
-        string str = Console.ReadLine();
+        string str = "theencodedmessageisobtainedbydisplayingthecharactersinacolumninsertingaspaceandthendisplayingthenextcolumnandinsertingaspaceandsoon";
         double n = Math.Sqrt(str.Length);
         int rows, columns;
         if(n % 1 == 0) {
@@ -27,7 +27,7 @@ class Solution {
         }
         else {
             rows = (int) n;
-            columns = (int) n+1;
+            columns = (int) n+1; 
         }
         if (rows*columns < str.Length) rows += 1;
         int spaces = (rows*columns) - str.Length;
