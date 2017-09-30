@@ -5,6 +5,7 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
+    //https://www.hackerrank.com/contests/university-codesprint-3/challenges/erupting-volcanoes
 	/*
 	 * This program is from University CodeSprint 3. The program takes the first line of input as an
 	 * integer which determines the size of a grid. On this grid, there will be a certain number of 
