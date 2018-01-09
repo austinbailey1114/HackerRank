@@ -13,7 +13,7 @@ int main() {
     *need to find out how many times this string occurs in the given 
     *collection of Nstrings.
     *Input Format
-    *The first line containsN, the number of strings.     *The next Nlines each contain a string.     *The N+2 line contains Q, the number of queries.     *The following Qlines each contain a query string.
+    *The first line containsN, the number of strings.     *The next Nlines each contain a string.     *The N+2 line contains Q, the number of queries.     *The following Qlines each contain a query string.*/
 
     int N;
     int Q;
